@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+.logo {
+    height: 100px;
+    margin-right: 10px;
+}
+.subtitulo {
+    color: #ff5100;
+    font-size: medium;
+}
+.headerText h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+.headerText h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+nav {
+    background-color: #ff5100;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}  
+nav ul li {
+    flex: 1;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+} 
+nav ul li a:hover {
+    background-color: black;
+    color: #ff5100;
+}
+.content {
+    display: flex;
+    padding: 20px;
+    background-color: #222222;
+}
+section {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+article img {
+    max-width: 100px;
+    margin-right: 10px;
+}  
+.articleText {
+    flex: 1;
+}
+article h3 {
+    font-size: medium;
+    color: #ffffff;
+}
+article h5 {
+    font-size: small;
+    color: #ffffff;
+}
+article p {
+    font-size: smaller;
+    color: #ff5100;
+}
+.cajas {
+    height: auto;
+}
+aside {
+    width: 30%;
+    padding: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+  
+/* Responsive */
+@media (min-width: 1200px) {
+    .content {
+      padding: 20px;
+    }
+    section {
+      width: 60%;
+    }
+    aside {
+      width: 40%;
+    }
+}
+@media (max-width: 1199px) {
+    .content {
+      padding: 20px 20px;
+    }
+    section {
+      width: 50%;
+    }
+    aside {
+      width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin: 0 auto 10px;
+    }
+  
+    .header-text h1, .header-text h2 {
+      text-align: center;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    section, aside {
+      width: 100%;
+    }
+  
+    article {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    article img {
+      margin: 0 0 10px;
+      width: 100%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .content {
+      padding: 10px;
+    }
+  
+    article img {
+      width: 100%;
+      margin: 0 0 10px;
+    }
+}
